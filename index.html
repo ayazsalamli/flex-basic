@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #555555;
+        }
+        .container{
+            display: flex;
+            width: auto;
+            border: 2px solid red;
+            padding: 6px;
+        }
+        .box{
+            height: 150px;
+            width: 150px;
+            background-color: lime;
+        }
+        .box:nth-child(1) {background-image: url(nininint.jpg); flex-shrink: 1;}
+        .box:nth-child(2) {background-image: url(sergia.jpg); flex-shrink:0;}
+        .box:nth-child(3) {background-image: url(pyro\ genshin.jpg); flex-shrink: 1;}
+
+        .payiz {
+    margin: auto;
+    height: 400px;
+    width: 400px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(bibbbb.jpg);
+    position: relative;
+    height: 400x;
+    width: 400px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.payiz::before{
+    content: 'Mountains';
+    text-align: center;
+    color: white;
+    line-height: 150px;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 10px;
+    transform: .4s;
+    scale: 0;
+  
+}
+.payiz:hover::before{
+    scale: 1;
+    opacity: 0.6;
+}
+    </style>
+</head>
+<body>
+   
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <video src="Overture Teaser_ The Final Feast _ Genshin Impact.mp4" controls width="450px" height="400px"></video>
+    <div class="payiz"></div>
+    
+</body>
+</html>
